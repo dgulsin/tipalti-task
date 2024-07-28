@@ -61,10 +61,44 @@ h6 {
   isolation: isolate;
 }
 
-#template-text {
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #333;
-  margin: 20px;
-  padding: 0;
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1180px;
+  }
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+}
+
+.table-overflow {
+  overflow-x: scroll;
 }
